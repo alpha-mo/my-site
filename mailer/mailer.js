@@ -18,7 +18,8 @@ const contact_transporter = nodemailer.createTransport({
 
 contact_transporter.use("compile", hbs({
     viewEngine: "express-handlebars",
-    viewPath: path.join(__dirname, '../views')
+    // viewPath: path.join(__dirname, '../views')
+    viewPath: path.parse('../views')
 }));
 
 const portfolio_sender = nodemailer.createTransport({
@@ -33,7 +34,8 @@ const portfolio_sender = nodemailer.createTransport({
 
 portfolio_sender.use("compile", hbs({
     viewEngine: "express-handlebars",
-    viewPath: path.join(__dirname, '../views')
+    // viewPath: path.join(__dirname, '../views')
+    viewPath: path.parse('../views')
 }));
 
 export const emailParties = async (req) => {
