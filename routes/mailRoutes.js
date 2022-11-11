@@ -2,8 +2,8 @@
 import express from 'express'
 import { sendMail } from '../controller/mailController.js'
 
-export const router = express.Router();
+export const mailRouter = express.Router();
 
-router.post('/contact', sendMail);
+mailRouter.post('/contact', sendMail);
 
 // module.exports = router;

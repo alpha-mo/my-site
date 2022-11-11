@@ -1,9 +1,9 @@
 import express from 'express'
 import { sendInstructions, testServer } from '../controller/appController.js'
 
-export const router = express.Router();
+export const appRouter = express.Router();
 
-router.get('/test', testServer);
-router.get('/info', sendInstructions);
+appRouter.get('/test', testServer);
+appRouter.get('/info', sendInstructions);
 
 // module.exports = router;
