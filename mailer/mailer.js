@@ -36,7 +36,7 @@ portfolio_sender.use("compile", hbs({
     viewPath: path.join(__dirname, '../views')
 }));
 
-const emailParties = async (req) => {
+export const emailParties = async (req) => {
     const contactResult = await sendContact(req, contact_transporter);
     const replyResult = await sendReply(req, portfolio_sender);
     return {
@@ -45,4 +45,4 @@ const emailParties = async (req) => {
     }
 }
 
-module.exports = emailParties;
+// module.exports = emailParties;
