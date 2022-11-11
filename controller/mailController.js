@@ -11,7 +11,7 @@ const response = {
     }
 }
 
-const sendMail = async (req, res) => {
+export const sendMail = async (req, res) => {
 
     if (req.body.email === null | req.body.email === '') {
         res.status(406).json({
@@ -52,4 +52,4 @@ const sendMail = async (req, res) => {
 }
 
 
-module.exports = sendMail;
+// module.exports = sendMail;
