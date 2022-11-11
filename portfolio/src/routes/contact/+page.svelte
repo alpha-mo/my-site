@@ -22,6 +22,7 @@
   in:fly={{ y: 100, duration: 150, delay: 300, opacity: 0 }}
   out:fly={{ y: 100, duration: 150, opacity: 0, delay: 150 }}
 >
+  <p style="text-align: center;">Contact Form is temperarly disabled.</p>
   <form
     method="POST"
     use:enhance={({ form }) => {
@@ -68,7 +69,7 @@
         onchange(2);
       }}
     />
-    <button>Send</button>
+    <button disabled>Send</button>
   </form>
 
   <Other />
@@ -83,6 +84,7 @@
     align-items: center;
     margin: 25px auto;
     gap: 25px;
+    opacity: 0.2;
   }
   input,
   textarea {
@@ -116,13 +118,13 @@
     padding: 5px;
     cursor: pointer;
   }
-  button:hover {
+  /* button:hover {
     background: var(--yellow-tint);
     border: 1px solid var(--yellow);
     color: var(--background);
     padding: 5px;
     cursor: pointer;
-  }
+  } */
   .err {
     border-color: var(--red);
   }
