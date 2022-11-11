@@ -1,6 +1,6 @@
 import path from 'path'
 
-const testServer = (req, res) => {
+export const testServer = (req, res) => {
     const incoming = {
         path: req.path,
         host_name: req.hostname
@@ -16,7 +16,7 @@ const testServer = (req, res) => {
     }
 }
 
-const sendInstructions = (req, res) => {
+export const sendInstructions = (req, res) => {
     const incoming = {
         path: req.path,
         host_name: req.hostname
@@ -32,7 +32,7 @@ const sendInstructions = (req, res) => {
     }
 }
 
-module.exports = {
-    testServer,
-    sendInstructions
-}
+// module.exports = {
+//     testServer,
+//     sendInstructions
+// }
