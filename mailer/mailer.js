@@ -1,8 +1,10 @@
-const nodemailer = require("nodemailer");
-const hbs = require("nodemailer-express-handlebars");
-var path = require('path');
-const sendContact = require('./contactSender');
-const sendReply = require('./replySender')
+
+import nodemailer from 'nodemailer'
+import hbs from 'nodemailer-express-handlebars'
+import path from 'path'
+
+import sendContact from './contactSender';
+import sendReply from './replySender'
 
 const contact_transporter = nodemailer.createTransport({
     host: process.env.HOST,

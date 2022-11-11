@@ -1,10 +1,11 @@
-require("dotenv").config();
+import dotenv from 'dotenv'
 import { handler } from './portfolio/build/handler.js'
-const express = require("express");
-const appRouter = require('./routes/appRoutes');
-const mailRouter = require('./routes/mailRoutes')
-const fs = require('fs');
-const https = require('https');
+import express from 'express'
+
+import appRouter from './routes/appRoutes';
+import mailRouter from './routes/mailRoutes'
+import fs from 'fs';
+import https from 'https';
 
 // create the express app
 const app = express();

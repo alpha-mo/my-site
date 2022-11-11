@@ -1,5 +1,5 @@
-const express = require('express');
-const { sendInstructions, testServer } = require('../controller/appController')
+import express from 'express'
+import { sendInstructions, testServer } from '../controller/appController'
 
 const router = express.Router();
 

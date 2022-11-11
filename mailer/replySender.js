@@ -1,5 +1,5 @@
 
-var path = require('path');
+import path from 'path'
 
 const opt = {
     from: `"Mohamad Ojail"<${process.env.CONTACT_SENDER}>`,

@@ -1,5 +1,4 @@
-
-var path = require('path');
+import path from 'path'
 
 const testServer = (req, res) => {
     const incoming = {

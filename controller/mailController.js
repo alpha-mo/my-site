@@ -1,4 +1,5 @@
-const emailParties = require('../mailer/mailer')
+
+import emailParties from '../mailer/mailer'
 
 const response = {
     status: '',

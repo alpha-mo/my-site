@@ -1,6 +1,6 @@
 
-const express = require('express');
-const sendMail = require('../controller/mailController')
+import express from 'express'
+import sendMail from '../controller/mailController'
 
 const router = express.Router();
 
