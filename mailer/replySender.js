@@ -27,7 +27,7 @@ const opt = {
     },
 };
 
-const sendReply = async (req, transporter) => {
+export const sendReply = async (req, transporter) => {
 
     const { name, email, message } = req.body;
     opt.to = email;
@@ -44,4 +44,4 @@ const sendReply = async (req, transporter) => {
         });
 }
 
-module.exports = sendReply;
+// module.exports = sendReply;
