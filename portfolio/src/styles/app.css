@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.hide-overflow {
+  overflow: hidden;
+}
+
+html {
+  scrollbar-color: rebeccapurple var(--background);
+  scrollbar-width: thin;
+  overflow: -moz-scrollbars-vertical;
+  overflow-y: scroll;
+}
+html::-webkit-scrollbar {
+  width: 5px;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: rebeccapurple;
+}

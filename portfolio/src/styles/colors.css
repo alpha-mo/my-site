@@ -1,0 +1,80 @@
+:root {
+  --red: #d72906;
+  --yellow: #e6f390;
+  --yellow-light: #dbd899;
+  --yellow-tint: #e6f390ac;
+  --orange: #e96b0b;
+  --cyan: #67fff0;
+  --blue: #3895ff9c;
+  --green: #38ff429c;
+  --background: #0a192f;
+  --card-background: #112240;
+  --card-hover: #142c57;
+  --white: #dbe7f3;
+  --white-dim: #b2bfcd;
+  --white-yellowish: #aaaaa4;
+  --shadow: #000204;
+}
+
+body {
+  background: var(--background);
+}
+
+h1 {
+  color: var(--white);
+}
+h2,
+p {
+  color: var(--white-dim);
+}
+
+h3,
+li {
+  color: var(--white-yellowish);
+}
+
+a {
+  transition: all 250ms ease;
+  color: var(--cyan);
+}
+a:hover {
+  color: var(--yellow);
+}
+
+.c-red {
+  color: var(--red);
+}
+.c-yellow {
+  color: var(--yellow);
+}
+.c-yellow-light {
+  color: var(--yellow-light);
+}
+.c-orange {
+  color: var(--orange);
+}
+.c-cyan {
+  color: var(--cyan);
+}
+.c-blue {
+  color: var(--blue);
+}
+.c-white {
+  color: var(--white);
+}
+.c-dim {
+  color: var(--white-dim);
+}
+.c-yellowish {
+  color: var(--white-yellowish);
+}
+
+.down-shadow {
+  box-shadow: 0 5px 3px var(--shadow);
+}
+.frame {
+  background: var(--background-light);
+  border: 0.5px solid var(--yellow);
+  border-radius: 6px;
+  box-shadow: 4px 4px 4px var(--shadow);
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Contact-form Server",
+    "url": "https://github.com/alpha-mo/contact-form-server",
+    "desc": "Built this express server to handle incoming contacts from my portfolio, the server utilizes an API. The server informs me about the incoming messages and at the same time sends confirmations to my visitors of message reception.",
+    "languages": [
+      { "lang": "JavaScript", "value": 7971 },
+      { "lang": "HTML", "value": 2494 },
+      { "lang": "Handlebars", "value": 2070 }
+    ],
+    "topics": ["email", "email-sender", "express", "nodejs"]
+  },
+  {
+    "name": "SpringBootSecurityExample",
+    "url": "https://github.com/alpha-mo/SpringBootSecurityExample",
+    "desc": "Modern example of spring security, and without deprecated classes. Utilizing Authentication, Authorizations, JWT tokens and other methods and techs.",
+    "languages": [{ "lang": "Java", "value": 24119 }],
+    "topics": ["jwt", "spring-boot-security"]
+  },
+  {
+    "name": "TryParse",
+    "url": "https://github.com/alpha-mo/maven-plugin-tryParse",
+    "desc": "Published on Maven repository this plugin imitates the tryParse method in C# within Java, useful tools for parsing user inputs without the trouble of getting exceptions.",
+    "languages": [{ "lang": "Java", "value": 3712 }],
+    "topics": ["csharp", "java", "maven-plugin", "tryparse"]
+  },
+  {
+    "name": "Spring-Boot Rest Api Demo",
+    "url": "https://github.com/alpha-mo/SpringBootRestApiDemo",
+    "desc": "Simple REST API with Exception handling",
+    "languages": [{ "lang": "Java", "value": 17733 }],
+    "topics": ["exception-handling", "rest-api", "spring-boot"]
+  },
+  {
+    "name": "alpha-mo",
+    "url": "https://github.com/alpha-mo/alpha-mo",
+    "desc": "readme markdown for my github profile",
+    "languages": [{ "lang": "other", "value": 1 }],
+    "topics": ["github", "profile-readme"]
+  },
+  {
+    "name": "Api Exception Handling",
+    "url": "https://github.com/alpha-mo/ApiExceptionHandeling",
+    "desc": "Some Exceptions that you might encounter with Rest APIs",
+    "languages": [{ "lang": "Java", "value": 5075 }],
+    "topics": ["exception-handling", "rest-api", "spring-boot"]
+  },
+  {
+    "name": "Cheat-Sheets",
+    "url": "https://github.com/alpha-mo/cheat-sheets",
+    "desc": "This is my personal knowledge-base. Here you'll find code-snippets, technical documentation, and command reference for various tools, and technologies.",
+    "languages": [{ "lang": "other", "value": 1 }],
+    "topics": ["cheatsheets", "obsidian", "second-brain"]
+  },
+
+  {
+    "name": "JavaFx-multiple-Controllers-communications-tutorial",
+    "url": "https://github.com/alpha-mo/JavaFx-multiple-Controllers-communications-tutorial",
+    "desc": "Having fun making a tutorial example about JavaFx multiple Controllers communications. this was made at the early stages of my studies",
+    "languages": [{ "lang": "Java", "value": 3214 }],
+    "topics": ["javafx", "learning-by-doing"]
+  },
+  {
+    "name": "rock_paper_scissors",
+    "url": "https://github.com/alpha-mo/rock_paper_scissors",
+    "desc": "Having fun learning JavaScript for the first time!",
+    "languages": [
+      { "lang": "JavaScript", "value": 3762 },
+      { "lang": "CSS", "value": 3289 },
+      { "lang": "HTML", "value": 1619 }
+    ],
+    "topics": ["javascript", "learning-by-doing"]
+  }
+]

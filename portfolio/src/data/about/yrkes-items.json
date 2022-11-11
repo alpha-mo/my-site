@@ -1,0 +1,78 @@
+[
+  {
+    "title": "OOP",
+    "desc": "Theoretical / practical in-depth knowledge of object-oriented programming.",
+    "details": [
+      "Object orientation",
+      "Handling exceptions",
+      "Unit and Integration testing",
+      "Persistence (file management / streams / properties / serialization / XML)",
+      "Concurrency",
+      "GUI programming (Graphical user interface)",
+      "Sockets and HTTP",
+      "Basic knowledge about distribution (Client Server, Distributed computing)",
+      "Object-oriented design and programming",
+      "Troubleshooting and tests",
+      "API design and implementation",
+      "Handling files, streams, properties, serialization, and XML",
+      "Multi-Threading",
+      "GUI programming in JavaFX",
+      "Network Programming, Client Server."
+    ]
+  },
+  {
+    "title": "System architecture",
+    "desc": "Working with Design Patterns",
+    "details": [
+      "Ability to identify design patterns",
+      "Basic knowledge of different frameworks in the Java environment",
+      "Basic knowledge of system integration",
+      "Knowledge of Behavior Patterns",
+      "Knowledge of different types of system architecture",
+      "Knowledge of Creational Patterns",
+      "Knowledge of Structural Patterns"
+    ]
+  },
+  {
+    "title": "Databases",
+    "desc": "Working with Databases.",
+    "details": [
+      "Persistence and different types of databases",
+      "Data modeling (focus on relational databases)",
+      "Objects for relational mapping and DBMS independent",
+      "JDBC and SQL",
+      "Design and implement appropriate data models (focus on relational databases)",
+      "Use and abstract SQL in Java"
+    ]
+  },
+  {
+    "title": "Software Development Process",
+    "desc": "division of the work in software development into distinct phases to improve design, product management and project management",
+    "details": [
+      "entrepreneurship",
+      "project management",
+      "Methods: Scrum, Kanban, Vattenfall models",
+      "DevOps"
+    ]
+  },
+  {
+    "title": "Enterprise Java Backend",
+    "desc": "Theoretical / practical knowledge and competence in Java system development for Internet-based services and competence in full stack system development.",
+    "details": [
+      "Java EE standards",
+      "DevOps and Enterprise Java Beans",
+      "Microservice",
+      "Wildfly and Spring",
+      "Java EE standard with:",
+      "JTA, JPA, JMS and GraphQl"
+    ]
+  },
+  {
+    "title": "Enterprise Java Frontend",
+    "desc": "additional competence in full-stack system development with a focus on the front-end.",
+    "details": [
+      "Concepts that the course contains:",
+      "JSP, Servlets / Filters, JSF, Web-services, HTML, XML and UEL"
+    ]
+  }
+]

@@ -1,0 +1,93 @@
+[
+  {
+    "title": "Frontend Frameworks",
+    "details": [
+      {
+        "ico": "/icons/software/svelte.svg#svelte-svg",
+        "iconClass": "svelte-svg",
+        "text": "Svelte"
+      },
+      {
+        "ico": "/icons/software/react.svg#react-svg",
+        "iconClass": "react-svg",
+        "text": "ReactJs"
+      },
+      {
+        "ico": "/icons/software/vue.svg#vue-svg",
+        "iconClass": "vue-svg",
+        "text": "Vue"
+      },
+      {
+        "ico": "/icons/software/fresh.svg#fresh-svg",
+        "iconClass": "fresh-svg",
+        "text": "Fresh"
+      }
+    ]
+  },
+  {
+    "title": "Backend Frameworks",
+    "details": [
+      {
+        "ico": "/icons/software/maven.svg#mavensvg",
+        "iconClass": "maven-svg",
+        "text": "Maven"
+      },
+      {
+        "ico": "/icons/software/spring.svg#spring-svg",
+        "iconClass": "spring-svg",
+        "text": "Spring"
+      }
+    ]
+  },
+
+  {
+    "title": "Languages",
+    "details": [
+      {
+        "ico": "/icons/software/c_sharpsvg.svg#csharp",
+        "iconClass": "csharp-svg",
+        "text": "C#"
+      },
+      {
+        "ico": "/icons/software/java.svg#javasvg",
+        "iconClass": "java-svg",
+        "text": "Java"
+      },
+      {
+        "ico": "/icons/software/javascript.svg#js-svg",
+        "iconClass": "javascript-svg",
+        "text": "JavaScript"
+      },
+      {
+        "ico": "/icons/software/typescript.svg#typescript-svg",
+        "iconClass": "typescript-svg",
+        "text": "TypeScript"
+      }
+    ]
+  },
+  {
+    "title": "Tools / plugs / addons",
+    "details": [
+      {
+        "ico": "/icons/software/css.svg#css-svg",
+        "iconClass": "css-svg",
+        "text": "CSS"
+      },
+      {
+        "ico": "/icons/software/scss.svg#scss-svg",
+        "iconClass": "scss-svg",
+        "text": "SCSS"
+      },
+      {
+        "ico": "/icons/software/tailwind.svg#tailwind-svg",
+        "iconClass": "tailwind-svg",
+        "text": "Tailwind"
+      },
+      {
+        "ico": "/icons/software/html.svg#html-svg",
+        "iconClass": "html-svg",
+        "text": "HTML"
+      }
+    ]
+  }
+]

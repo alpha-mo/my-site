@@ -1,0 +1,36 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 68px;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.fmd {
+  font-weight: 300;
+}
+
+.flt {
+  font-weight: 200;
+}
+
+.fth {
+  font-size: 18px;
+  font-weight: 100;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamad Ojail Contact Server Instructions</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Usage:</h1>
+        <p class="disc">Server Test: <strong>GET</strong> [ https://contact.ojail.online/api/app/test ]</p>
+        <p class="disc">Server info: <strong>GET</strong> [ https://contact.ojail.online/api/app/info ]</p>
+        <p class="disc">Contact email: <strong>POST</strong> [ https://contact.ojail.online/api/server/contact ]</p>
+        <p><strong>POST</strong> request uses a json body:</p>
+        <p class="json-object">
+            {
+            <span class="item">
+                <span class="key">"name"</span> :
+                <span class="value">"name"</span>,
+            </span>
+
+            <span class="item">
+                <span class="key">"email"</span> :
+                <span class="value">"email"</span>,
+            </span>
+
+            <span class="item">
+                <span class="key">"message"</span> :
+                <span class="value">"message"</span>
+            </span>
+            }
+        </p>
+    </div>
+</body>
+<style>
+    * {
+        font-family: sans-serif;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .container {
+        margin: 1rem auto;
+        background: rgb(233, 233, 233);
+        padding: 2rem;
+        width: max-content;
+        border-radius: 5px;
+        box-shadow: 3px 4px 2px gray;
+    }
+
+    .json-object {
+        background: rgb(56, 56, 55);
+        width: max-content;
+        padding: 2rem;
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item {
+        text-indent: 20px;
+    }
+
+    .key {
+        color: aqua;
+    }
+
+    .value {
+        color: rgb(255, 154, 60);
+    }
+</style>
+
+</html>
