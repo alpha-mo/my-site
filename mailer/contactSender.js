@@ -28,7 +28,7 @@ const opt = {
     },
 };
 
-const sendContact = async (req, transporter) => {
+export const sendContact = async (req, transporter) => {
 
     const { name, email, message } = req.body;
     opt.text = message;
@@ -46,4 +46,4 @@ const sendContact = async (req, transporter) => {
         });
 }
 
-module.exports = sendContact;
+// module.exports = sendContact;

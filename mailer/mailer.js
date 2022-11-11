@@ -3,7 +3,7 @@ import nodemailer from 'nodemailer'
 import hbs from 'nodemailer-express-handlebars'
 import path from 'path'
 
-import sendContact from './contactSender.js';
+import { sendContact } from './contactSender.js';
 import sendReply from './replySender.js'
 
 const contact_transporter = nodemailer.createTransport({
