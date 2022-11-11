@@ -10,12 +10,14 @@ const opt = {
     attachments: [
         {
             filename: "logo-sig.png",
-            path: path.join(__dirname, "../public/images/logo-sig.png"),
+            // path: path.join(__dirname, "../public/images/logo-sig.png"),
+            path: path.parse('../public/images/logo-sig.png'),
             cid: "logo-sig", //same cid value as in the html img src
         },
         {
             filename: "logo.png",
-            path: path.join(__dirname, "../public/images/logo.png"),
+            // path: path.join(__dirname, "../public/images/logo.png"),
+            path: path.parse('../public/images/logo.png'),
             cid: "logo", //same cid value as in the html img src
         },
     ],
