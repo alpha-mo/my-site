@@ -2,8 +2,8 @@ import dotenv from 'dotenv'
 import { handler } from './portfolio/build/handler.js'
 import express from 'express'
 
-import appRouter from './routes/appRoutes';
-import mailRouter from './routes/mailRoutes'
+import appRouter from './routes/appRoutes.js';
+import mailRouter from './routes/mailRoutes.js'
 import fs from 'fs';
 import https from 'https';
 

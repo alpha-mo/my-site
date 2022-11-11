@@ -1,5 +1,5 @@
 
-import emailParties from '../mailer/mailer'
+import emailParties from '../mailer/mailer.js'
 
 const response = {
     status: '',
