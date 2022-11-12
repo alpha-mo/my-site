@@ -40,7 +40,7 @@ app.use((req, res, next) => {
 
 app.use(handler);
 
-app.get('/api/server/contact', async (req, res) => {
+app.use('/api/server/contact', async (req, res) => {
     const { name, email, message } = req.body
     const err = false;
     await sendMail(name, email, message).catch(() => {

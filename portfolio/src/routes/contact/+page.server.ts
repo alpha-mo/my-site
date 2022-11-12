@@ -8,6 +8,8 @@ export const actions: Actions = {
     let result: {}
 
     if (areOk({ name, email, message })) {
+      console.log('trying to send email')
+
       const res = await fetch('http://localhost:443/api/server/contact', {
         method: 'POST',
         credentials: 'same-origin',
