@@ -45,7 +45,8 @@ app.post('/api/server/contact', async (req, res) => {
     const { name, email, message } = req.body
     console.log(name, email, message);
     let err = false;
-    await sendMail(name, email, message).catch(() => {
+    await sendMail(name, email, message).catch((x) => {
+        console.log(x);
         err = true
     })
     if (err) {
