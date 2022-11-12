@@ -8,6 +8,8 @@ import https from 'https';
 
 config()
 
+console.log('configured');
+
 // create the express app
 const app = express();
 const port = 443;
