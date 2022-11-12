@@ -38,7 +38,7 @@ app.use((req, res, next) => {
     next();
 });
 
-app.use(handler);
+// app.use(handler);
 
 app.post('/api/server/contact', async (req, res) => {
     console.log('Called');
