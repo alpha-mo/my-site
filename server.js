@@ -1,11 +1,12 @@
-import dotenv from 'dotenv'
+import { config } from 'dotenv'
 import { handler } from './portfolio/build/handler.js'
 import express from 'express'
 
-import { appRouter } from './routes/appRoutes.js';
-import { mailRouter } from './routes/mailRoutes.js'
+import { sendMail } from './mailer.js'
 import fs from 'fs';
 import https from 'https';
+
+config()
 
 // create the express app
 const app = express();
@@ -37,27 +38,15 @@ app.use((req, res, next) => {
 
 app.use(handler);
 
-// manage http requests to the API
-app.get('/info', (req, res) => {
-    res.status(200).json({
-        Server_Test: {
-            Method: 'GET',
-            Request_URL: 'https://ojail.se/api/app/test'
-        },
-        Server_Status: {
-            Method: 'GET',
-            Request_URL: 'https://ojail.se/api/app/info'
-        },
-        Contact_Function: {
-            Method: 'POST',
-            Request_URL: 'https://ojail.se/api/server/contact',
-            Request_Body_example: {
-                "name": "sender name",
-                "message": "this is a message!",
-                "email": "bla.bla@foo.org"
-            }
-        }
+app.get('/api/server/contact', async (req, res) => {
+    const { name, email, message } = req.body
+    const err = false;
+    await sendMail(name, email, message).catch(() => {
+        err = true
     })
-})
-app.use('/api/app', appRouter);
-app.use('/api/server', mailRouter);
+    if (err) {
+        res.status(500).json({ err })
+    } else {
+        res.status(200).json({ success: true })
+    }
+});
