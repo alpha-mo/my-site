@@ -3,6 +3,8 @@ import { fromForm, areOk, isOk } from '$utils/contact/contactFormUtils'
 
 export const actions: Actions = {
   default: async ({ request, fetch }) => {
+    console.log('invoked')
+
     const formData = await request.formData()
     const { name, message, email } = fromForm(formData)
     let result: {}
