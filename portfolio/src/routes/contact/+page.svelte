@@ -22,7 +22,6 @@
   in:fly={{ y: 100, duration: 150, delay: 300, opacity: 0 }}
   out:fly={{ y: 100, duration: 150, opacity: 0, delay: 150 }}
 >
-  <p style="text-align: center;">Contact Form is temperarly disabled.</p>
   <form
     method="POST"
     use:enhance={({ form }) => {
@@ -69,7 +68,7 @@
         onchange(2);
       }}
     />
-    <button disabled>Send</button>
+    <button>Send</button>
   </form>
 
   <Other />
@@ -84,7 +83,6 @@
     align-items: center;
     margin: 25px auto;
     gap: 25px;
-    opacity: 0.2;
   }
   input,
   textarea {
