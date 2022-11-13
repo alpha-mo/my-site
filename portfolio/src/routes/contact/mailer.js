@@ -21,14 +21,14 @@ export const sendMail = async (name, email, message) => {
     console.log('send mail called');
     // send mail with defined transport object
     let confRes = await transporter.sendMail({
-        from: `"M. Ojail" <${process.env.CONTACT_SENDER}>`, // sender address
+        from: `"M. Ojail" <${process.env.PORTFOLIO_SENDER}>`, // sender address
         to: email, // list of receivers
         subject: "noreply/confirmation", // Subject line
         html: confirmHtml(name, message), // html body
     });
 
     let incomRes = await transporter.sendMail({
-        from: `${name} <${email}>`, // sender address
+        from: `${name} <${process.env.PORTFOLIO_SENDER}>`, // sender address
         to: process.env.CONTACT_SENDER, // list of receivers
         subject: "Incoming contact ✔", // Subject line
         html: incomingHtml(name, message), // html body
