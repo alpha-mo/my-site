@@ -11,12 +11,18 @@ export const actions: Actions = {
     if (areOk({ name, email, message })) {
       console.log('trying to send email')
 
-      const res = await sendMail(name, email, message).catch((err) => {
-        return {
-          success: true,
-          result,
-        }
-      })
+      const res = await sendMail(name, email, message)
+        .then((response) => {
+          console.log(`Response is: ${response}`)
+        })
+        .catch((err) => {
+          console.log(`error is: ${err}`)
+
+          return {
+            success: true,
+            result,
+          }
+        })
       console.log(`Result is: ${res}`)
     } else {
       return {
