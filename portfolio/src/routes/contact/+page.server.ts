@@ -17,6 +17,7 @@ export const actions: Actions = {
           result,
         }
       })
+      console.log(`Result is: ${res}`)
     } else {
       return {
         success: false,
