@@ -3,7 +3,6 @@ import { config } from "dotenv";
 config({ path: process.ENV })
 
 import { env } from '$env/dynamic/public';
-console.log(env);
 
 import { confirmHtml, incomingHtml } from "./msg.js";
 
