@@ -1,7 +1,7 @@
 import nodemailer from "nodemailer";
-import { config, } from 'dotenv'
+import { config } from "dotenv";
+config({ path: process.ENV })
 import { confirmHtml, incomingHtml } from "./msg.js";
-config()
 
 // create reusable transporter object using the default SMTP transport
 const transporter = nodemailer.createTransport({
