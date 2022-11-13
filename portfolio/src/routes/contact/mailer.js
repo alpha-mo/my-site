@@ -1,14 +1,11 @@
 import nodemailer from "nodemailer";
 import { config } from "dotenv";
 config({ path: process.ENV })
-
-import { env } from '$env/dynamic/public';
-
 import { confirmHtml, incomingHtml } from "./msg.js";
 
 // create reusable transporter object using the default SMTP transport
 const transporter = nodemailer.createTransport({
-    host: env.EMAIL_HOST,
+    host: process.env.EMAIL_HOST,
     port: process.env.EMAIL_PORT,
     secure: true, // true for 465, false for other ports
     auth: {
