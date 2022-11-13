@@ -1,5 +1,7 @@
 import { handler } from './portfolio/build/handler.js'
 import express from 'express'
+import { config } from "dotenv";
+config()
 
 import fs from 'fs';
 import https from 'https';
