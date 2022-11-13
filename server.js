@@ -1,13 +1,8 @@
-import { config } from 'dotenv'
 import { handler } from './portfolio/build/handler.js'
 import express from 'express'
 
 import fs from 'fs';
 import https from 'https';
-
-config()
-
-console.log('configured');
 
 // create the express app
 const app = express();

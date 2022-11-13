@@ -9,8 +9,6 @@ export const actions: Actions = {
     let result: {} = { sent: false }
 
     if (areOk({ name, email, message })) {
-      console.log('trying to send email')
-
       const res = await sendMail(name, email, message)
         .then((response) => {
           console.log(`Response is: ${response}`)
@@ -23,7 +21,6 @@ export const actions: Actions = {
             result,
           }
         })
-      console.log(`Result is: ${res}`)
     } else {
       return {
         success: false,
