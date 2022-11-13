@@ -3,7 +3,7 @@ import { config } from "dotenv";
 config({ path: process.ENV })
 
 import { env } from '$env/dynamic/public';
-console.log(env.PUBLIC_DEPLOYMENT_SPECIFIC_VARIABLE);
+console.log(env);
 
 import { confirmHtml, incomingHtml } from "./msg.js";
 
