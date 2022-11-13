@@ -3,8 +3,6 @@ import { config } from 'dotenv'
 import { confirmHtml, incomingHtml } from "./msg.js";
 config()
 
-console.log('mailer configured');
-
 // create reusable transporter object using the default SMTP transport
 const transporter = nodemailer.createTransport({
     host: process.env.EMAIL_HOST,
@@ -15,6 +13,8 @@ const transporter = nodemailer.createTransport({
         pass: process.env.PORTFOLIO_SENDER_PASSWORD, // generated ethereal password
     },
 });
+
+console.log(transporter);
 
 // async..await is not allowed in global scope, must use a wrapper
 export const sendMail = async (name, email, message) => {
