@@ -2,8 +2,8 @@ import nodemailer from "nodemailer";
 import { config } from "dotenv";
 config({ path: process.ENV })
 
-import { env } from '$env/dynamic/private';
-console.log(env.DEPLOYMENT_SPECIFIC_VARIABLE);
+import { env } from '$env/dynamic/public';
+console.log(env.PUBLIC_DEPLOYMENT_SPECIFIC_VARIABLE);
 
 import { confirmHtml, incomingHtml } from "./msg.js";
 
