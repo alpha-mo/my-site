@@ -1,27 +1,22 @@
 import type { Actions } from '@sveltejs/kit'
 import { fromForm, areOk, isOk } from '$utils/contact/contactFormUtils'
+import { sendMail } from './mailer.js'
 
 export const actions: Actions = {
   default: async ({ request, fetch }) => {
     const formData = await request.formData()
     const { name, message, email } = fromForm(formData)
-    let result: {}
+    let result: {} = { sent: false }
 
     if (areOk({ name, email, message })) {
       console.log('trying to send email')
 
-      const res = await fetch('http://localhost:443/api/server/contact', {
-        method: 'POST',
-        credentials: 'same-origin',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ name, email, message }),
+      const res = await sendMail(name, email, message).catch((err) => {
+        return {
+          success: true,
+          result,
+        }
       })
-      console.log('after fetch')
-
-      result = await res.json()
-      console.log(result)
     } else {
       return {
         success: false,
@@ -37,7 +32,7 @@ export const actions: Actions = {
 
     return {
       success: true,
-      result,
+      result: { sent: true },
     }
   },
 }

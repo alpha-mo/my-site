@@ -36,4 +36,5 @@ export const sendMail = async (name, email, message) => {
 
     console.log("Confirmation result:\n", confRes);
     console.log("Incoming result:\n", incomRes);
+    return { success: true }
 }

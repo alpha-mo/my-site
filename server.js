@@ -2,7 +2,6 @@ import { config } from 'dotenv'
 import { handler } from './portfolio/build/handler.js'
 import express from 'express'
 
-import { sendMail } from './mailer.js'
 import fs from 'fs';
 import https from 'https';
 
@@ -38,20 +37,20 @@ app.use((req, res, next) => {
     next();
 });
 
-// app.use(handler);
+app.use(handler);
 
-app.post('/api/server/contact', async (req, res) => {
-    console.log('Called');
-    const { name, email, message } = req.body
-    console.log(name, email, message);
-    let err = false;
-    await sendMail(name, email, message).catch((x) => {
-        console.log(x);
-        err = true
-    })
-    if (err) {
-        res.status(500).json({ err })
-    } else {
-        res.status(200).json({ success: true })
-    }
-});
+// app.post('/api/server/contact', async (req, res) => {
+//     console.log('Called');
+//     const { name, email, message } = req.body
+//     console.log(name, email, message);
+//     let err = false;
+//     await sendMail(name, email, message).catch((x) => {
+//         console.log(x);
+//         err = true
+//     })
+//     if (err) {
+//         res.status(500).json({ err })
+//     } else {
+//         res.status(200).json({ success: true })
+//     }
+// });

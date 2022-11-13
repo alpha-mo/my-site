@@ -116,13 +116,13 @@
     padding: 5px;
     cursor: pointer;
   }
-  /* button:hover {
+  button:hover {
     background: var(--yellow-tint);
     border: 1px solid var(--yellow);
     color: var(--background);
     padding: 5px;
     cursor: pointer;
-  } */
+  }
   .err {
     border-color: var(--red);
   }
