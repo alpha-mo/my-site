@@ -1,5 +1,19 @@
 [
   {
+    "name": "My Portfolio",
+    "url": "https://api.github.com/repos/alpha-mo/my-site",
+    "desc": "Running Sveltekit side by side with my node express server which servs the send contact mail service.",
+    "languages": [
+      { "lang": "Svelte", "value": 21621 },
+      { "lang": "JavaScript", "value": 3789 },
+      { "lang": "TypeScript", "value": 3404 },
+      { "lang": "CSS", "value": 2406 },
+      { "lang": "HTML", "value": 267 },
+      { "lang": "Shell", "value": 109 }
+    ],
+    "topics": ["https", "ssl", "sveltekit"]
+  },
+  {
     "name": "Contact-form Server",
     "url": "https://github.com/alpha-mo/contact-form-server",
     "desc": "Built this express server to handle incoming contacts from my portfolio, the server utilizes an API. The server informs me about the incoming messages and at the same time sends confirmations to my visitors of message reception.",
