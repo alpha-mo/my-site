@@ -6,10 +6,7 @@
     "languages": [
       { "lang": "Svelte", "value": 21621 },
       { "lang": "JavaScript", "value": 3789 },
-      { "lang": "TypeScript", "value": 3404 },
-      { "lang": "CSS", "value": 2406 },
-      { "lang": "HTML", "value": 267 },
-      { "lang": "Shell", "value": 109 }
+      { "lang": "TypeScript", "value": 3404 }
     ],
     "topics": ["https", "ssl", "sveltekit"]
   },
