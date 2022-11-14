@@ -1,7 +1,7 @@
 [
   {
     "name": "My Portfolio",
-    "url": "https://api.github.com/repos/alpha-mo/my-site",
+    "url": "https://github.com/alpha-mo/my-site",
     "desc": "Running Sveltekit side by side with my node express server which servs the send contact mail service.",
     "languages": [
       { "lang": "Svelte", "value": 21621 },
